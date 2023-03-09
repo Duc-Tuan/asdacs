@@ -2,9 +2,9 @@ const User = require("../Models/user");
 
 const index = (req, res, next) => {
   User.find({})
-    .then((users) => {
+    .then((data) => {
       return res.status(200).json({
-        users,
+        data,
       });
     })
     .catch((err) => next(err));
