@@ -23,7 +23,7 @@ app.use(function (req, res, next) {
 });
 mongoose
   .connect(
-    "mongodb+srv://admin:12345@cluster0.b8rdpsh.mongodb.net/demo_api_datn"
+    "mongodb+srv://admin:12345@cluster0.b8rdpsh.mongodb.net/admin"
   )
   .then(() => console.log("connection success"))
   .catch((error) => console.error(`connection failed ${error}`));
