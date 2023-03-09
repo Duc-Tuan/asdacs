@@ -23,7 +23,7 @@ app.use(function (req, res, next) {
 });
 mongoose
   .connect(
-    "mongodb://localhost:27017/test_api"
+    "mongodb+srv://admin:12345@cluster0.b8rdpsh.mongodb.net/demo_api_datn"
   )
   .then(() => console.log("connection success"))
   .catch((error) => console.error(`connection failed ${error}`));
