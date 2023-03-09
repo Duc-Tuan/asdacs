@@ -11,7 +11,7 @@ const index = (req, res, next) => {
 };
 
 const postUser = (req, res, next) => {
-  req.body.avatar = `avatarUsers/${req.file.filename}`;
+  // req.body.avatar = `avatarUsers/${req.file.filename}`;
   const dataUser = new User(req.body);
   dataUser
     .save()
