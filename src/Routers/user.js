@@ -7,6 +7,6 @@ const UserController = require("../Controllers/user");
 router
   .route("/")
   .get(UserController.index)
-  .post(uploadFile.single("avatar"), UserController.postUser);
+  .post(UserController.postUser);
   
 module.exports = router;
